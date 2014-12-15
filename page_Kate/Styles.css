@@ -1,0 +1,211 @@
+/* Created by TopStyle Trial - www.topstyle4.com */
+
+/*body {margin:0; background: #FFFFE0; width: 100%}*/
+ html {
+   background-image: url('img\\backgr.jpg'); /* Путь к графическому файлу с первым фоном */ 
+  }
+body {
+	background-image: url('img\\SuonoDelVento.png');
+	margin: 0;
+	width: 100%;
+	height: 780px;
+
+
+	}
+
+#page {
+	/*background-color: #FFEFD5;*/
+	background: rgba(255, 239, 213, 0.7);
+	width: 970px;
+	margin: 0 auto;
+ 	}
+
+#main {
+
+position:relative;
+width: 950px;
+padding: 10px;
+margin: 0 auto;
+overflow: hidden;
+
+}
+#header {
+position: relative;
+height: 220px;
+padding: 0 0 0 18px;
+background-color:#FFEFD5;   
+color: black;
+background-image: url('img\\head.jpg');
+overflow:hidden; 
+background-color:#eee;
+}
+
+
+
+/*#header #logo {
+margin-left:100px;
+text-align: center;
+}*/
+
+ #phone {position:absolute; 
+ 		top: 35px; 
+ 		left:95px;
+ 		width: 250px; 
+ 		padding: 0px 20px 0px 2px; 
+ 		color:#000; 
+ 		text-align:center; 
+ 		font-size: 21px; 
+ 		line-height: 20px; }
+
+#phone span {font-size:18px;
+	}
+
+#phone a {font-size: 16px; 
+		  color: #000; 
+		  line-height: 16px; 
+		  font-style: normal; }
+
+#phone a:hover {color: #FF4500; 
+		        text-decoration: none;}
+
+#adr {position:absolute; 
+ 		top: 135px; 
+ 		left:25px;
+ 		width: 250px; 
+ 		padding: 0px 20px 0px 2px; 
+ 		color:#000; 
+ 		text-align:center; 
+ 		font-size: 21px; 
+ 		line-height: 20px;
+
+}		 
+#adr span {font-size: 20px;
+ 	 	   }
+
+#nav { position:relative; 
+ 		/*padding:0 5px; */
+ 		background:url("img\\nav.jpg"); 
+ 		overflow:hidden; 
+ 		/*border:#000000 1px solid;*/
+ 		}
+ #nav a {color:#000;}
+ #nav ul {margin:0px;
+ 		  list-style:none;
+ 		  /*border:red 1px solid;*/
+ 		}
+ #nav ul li {display:inline;
+ 				margin-left: 0px;
+
+ 			/*border:red 1px solid;*/
+
+ 			}
+ #nav ul li a { display:block; 
+ 				float:left; 
+ 				padding:5px 20px ; 
+ 				text-decoration:none; 
+ 				font-weight: bold;
+ 				border-right:#FFE4B5 1px solid;
+ 				border-left:#FFE4B5 1px solid;
+ 				/*border:#000000 1px solid;*/
+ 				
+ 			}
+ #nav a:hover {color:#FF4500;}
+ #nav ul li.active, #nav ul li.active a {color:#FF4500; 
+ 										font-weight:bold;}
+
+
+ #aside {float:left;
+ 		 width:245px;
+ 		 height:500px; 
+ 		 background-color: #FFEFD5;
+ 		 border-left: 7px double #8B4513;
+ 		 border-right: 7px double #8B4513;
+ 		/*position: absolute;*/
+ 	}
+.title-03 {margin:0px 0px 2px 0px; 
+		   padding:13px 10px 13px 19px; 
+		   font-size:18px; 
+		   font-weight:bold;
+		}
+
+#subnav {margin:0px 0px -1px 0px;
+		 list-style:none;
+
+
+		}
+#subnav li {display:inline;
+			padding:0;
+
+		}
+#subnav li a {display:block;
+			  padding:9px 10px 9px 35px;
+			  background:url("../i/subnav.gif") 20px 50% no-repeat;
+			  border-bottom:1px solid #efefef; 
+			  color:#000; 
+			  text-decoration:none;}
+#subnav li.active a {color:#FF5300;}
+#subnav li a:hover {text-decoration:none; 
+					color:#FF5300;}
+#subnav li.last a {border:0;}
+
+
+#content {float:right;
+		  width:680px;
+		  height: 500px;
+		 /*background: rgba(255, 239, 213, 0.7);*/
+		  border-right: 7px double #8B4513;
+		 /* background-color: #FFEFD5;
+		 */ /* border:2px solid black;*/
+		 }
+
+#nameAlbom{ text-align: center;
+ padding-bottom: 15px; }
+#nameAlbom span {
+	padding-left: 10px;
+	font-size: 25px;
+
+
+}
+div#fancywrap {
+	padding-left: 10px;
+	/*border:2px solid red;*/
+}
+
+#content ul {
+    width: 780px;
+  
+    }
+
+
+ #content ul li {
+position: relative;
+display: block;
+float: left;
+width: 260px;
+height: 200px;
+text-align: center;
+border: 1px solid #ccc;
+padding: 4px 0 8px;
+line-height: 1.4;
+margin: 0 15px 15px 0;
+background-color: #FFEFD5 }
+
+#indexContent {
+	margin:auto;
+	margin-top: 15px;
+	width:90%;
+	background-color: #FFFFF0;
+	
+}
+
+#indexContent #intro {
+	text-align: center;
+	font-size: 20px;
+	padding-left: 7px;
+	padding-right: 7px;
+
+}
+
+#indexContent #text {
+	margin-left: 10px;
+}
