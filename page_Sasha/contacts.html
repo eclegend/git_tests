@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surfing</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="images/surf.jpg">
+	<link rel="stylesheet" href="style2.css" media="all">
+	<script type="text/javascript">
+        <!--
+            function initialize() {
+                        var myLatlng = new google.maps.LatLng(55.752786,37.618293);
+                           //координаты - будьте внимательны, у яндекса и гугла они поменяны местами
+                        var myOptions = {
+                        zoom: 17,
+                        center: myLatlng,
+                        markers: myLatlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                                        }
+                        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+ 
+                        var marker = new google.maps.Marker({
+                                     position: myLatlng,
+                                     map: map,
+                                     title: "МойОфис"
+                                        //заголовок маркера
+                                     });
+		}
+ 
+            function loadScript() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
+                document.body.appendChild(script);
+            }
+            window.onload = loadScript;
+        //-->
+        </script>
+</head>
+<body>
+
+	<div class="header">
+		<div class="mid">
+			<header>	
+				<img src="images/logo.jpg">
+				<div class="topmenu">
+					<aside>
+						<a href="#">О нас</a>
+						<a href="#">Главная</a>
+						<a href="#">Школа</a>
+						<a href="#">Путёвки</a>
+						<a href="file:///C:/Users/Desktop/surf/contacts.html">Контакты</a>
+						<a href="#">Партнёры</a>
+					</aside>
+
+
+				</div>
+
+			</header>
+		</div>
+	</div>
+	<div class="content">
+		<div class="mid">
+			<div class="fon">
+					<div class="menu2">
+					<ul>
+						 <li><a href="#">Школа серфинга</a></li>
+						 <li><a href="#">Наша команда</a></li>
+						 <li><a href="#">Обучение</a></li>
+						 <li><a href="#">Туры</a></li>
+						 <li><a href="#">Тренера</a></li>
+						</ul>
+
+				</div>
+			<div id="contacts">
+					<h3>Адреса наших офисов в центре города, не далеко от метро!!!</h3>
+					<p>м.Боровицкая<br>
+						 адрес: ул.Волхонка, д.6<br>
+						 телефон: (495) 697 25 15<br>
+						 режим работы: ежедневно, круглосуточно</p>
+					</div>
+					<div id="map_canvas"></div>
+					<!-- <div id="map">
+					<img src="images/map.jpg">
+					</div> -->
+				<div class="reklama">
+					<section>
+						<img src="images/reklama.jpg">
+					</section>	
+					<div class="obj">
+						<em>Только в этом месяце!!!
+						     Цена снижена в 2 раза</em>
+					</div>
+
+				</div>
+
+				</div>
+
+				</div>
+				</div>
+				<div class="footer">
+		<div class="mid">
+		<span>2014 &copy;Surf for Life</span> <span>Дизайн и разработка: Саша</span>
+		</div>
+	</div>
+</body>
+</html>
