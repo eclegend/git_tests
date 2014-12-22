@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta name="author" content="Пузовик Юлия">
+<meta name="description" content="Создаю свою первую страничку HTML">
+<title>Моя первая страница!</title>
+</head>
+<body bgcolor="Lavender" text="Snow4" link="Blue" vlink="SteelBlue" alink="#CDC9C9">
+<h3 align="center">Моя первая страница HTML</h3>
+<p align="center"><span style="color:#FF0000;">Тур</span> твоей мечты</p>
+<p>Хотите отдохнуть?<div STYLE="color:red" UNSELECTABLE="on" align="center">Вам сюда!</div>
+<font face="arial" size="5" color="DodgerBlue"><p>Информация о туроператоре:</p></font>
+<font face="arial" size="4" color="Black"><p><em>Пузовик Юлия Владимировна</em></p></font>
+<ol type="a" start="1">
+<li><font face="arial" size="3" color="Black"><p><strong>Дата рождения:</strong> 13.12.1992</li></p></font>
+<li><font face="arial" size="3" color="Black"><p><strong>Место жительства:</strong> МО, Дмитровский район, п.Горки-25</li></p></font>
+<li><font face="arial" size="3" color="Black"><p><strong>Мобильный телефон:</strong> 8-903-138-43-07</li></p></font>
+<p><em>Контакты:</em></p>
+<a href="https://www.facebook.com/julia.puzovik" title="Моя личная страничка на www.facebook.com" target="_blank">Страничка на facebook</a>
+<p><a href="mailto:uliay.1992@rambler.ru">Адрес моей электронной почты</a></p>
+<p><em>Моё фото</em></p>
+<img src="images/myPhoto.jpg" align="center">
+<p><em>Аудио</em></p>
+<bgsound src="image/file.mp3" loop="1" balance="0" volime="-10000">
+<form action=mail.php>
+<font face="arial" size="4" color="Black"><strong><p>В какую из предложенных стран Вам бы хотелось поехать сейчас?</p></strong></font> 
+<select name=country>
+<option value=c1>Австралия
+<option value=c2 selected>Турция
+<option value=c3>Болгария
+<option value=c4>Франция
+<option value=c5>Тайланд
+<option value=c6>Индия
+</select>
+<form action=mail.php>
+<font face="arial" size="4" color="Black"><strong><p>Какой вид отдыха Вы предпочитаете?</p></strong></font> 
+<select name=relax>
+<option value=r1>Пляжный
+<option value=r2 selected>Горнолыжный
+<option value=r3>Экскурсионный
+<option value=r4>Экзотический
+<option value=r5>Круиз
+<option value=r6>Молодежный
+</select>
+<form action=mail.php>
+<font face="arial" size="4" color="Black"><strong><p>Введите сумму,которую планируете потратить на 1 человека:</p></strong></font>
+<input type=texte>
+<input type=submit value=OK>
+</form> 
+<table bgcolor="LightSkyBlue" border="1" bordercolor="black" cellpadding="10" cellspacing="2" width="50%" >
+<font face="arial" size="4" color="Black"><strong><p>Пример заполнения таблицы:</p></strong></font>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+<tr>
+<td>Город вылета</td>
+<td>Страна</td>
+<td>Дата вылета</td>
+<td>Количество взрослых</td>
+<td>Количество детей</td>
+</tr>
+<tr>
+<td>Москва</td>
+<td>Турция</td>
+<td>17.10.2013</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tr>
+</table>
+<form action=mail.php>
+<font face="arial" size="4" color="Black"><strong><p>Выбираем авиакомпанию:</p></strong></font>
+<input class=col type=checkbox name=option1 value=a1 checked>Трансаэро
+<input class=col type=checkbox name=option2 value=a2>Аэрофлот
+<input class=col type=checkbox name=option3 value=a3>ЮТэйр
+<input class=col type=checkbox name=option4 value=a4>Sky Express
+<input class=col type=checkbox name=option5 value=a5>РусЛайн
+<input type=submit value="Выбрать">
+</form>
+<form enctype="multipart/form-data" method=post>
+<font face="arial" size="4" color="Black"><strong><p>Загружаем свои файлы с информацией, пожеланиями, фотографиями. Выбрать файл:</p></strong></font>
+<input type=file size=30>
+</form>
+<form action=mail.php>
+Вам понравилась моя страничка?
+<input class=col type=checkbox name=option1 value=a1 checked>Да
+<input class=col type=checkbox name=option2 value=a2>Нет
+<input type=submit value="Выбрать">
+</form>
+</body>
+</html>
+
