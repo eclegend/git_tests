@@ -1,0 +1,131 @@
+div {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    background: red;
+    -webkit-animation: anim 3s infinite;
+    animation: anim 3s infinite;
+
+}
+#div1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+#div2 {
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
+}
+#div3 {
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+#div4 {
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+#div5 {
+    -webkit-animation-delay: 400ms;
+    animation-delay: 400ms;
+}
+#div6 {
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+#div7 {
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+}
+#div8 {
+    -webkit-animation-delay: 700ms;
+    animation-delay: 700ms;
+}
+#div9 {
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
+}
+#div10 {
+    -webkit-animation-delay: 900ms;
+    animation-delay: 900ms;
+}
+#div11 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#div12 {
+    -webkit-animation-delay: 1100ms;
+    animation-delay: 1100ms;
+}
+#div13 {
+    -webkit-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+#div14 {
+    -webkit-animation-delay: 1300ms;
+    animation-delay: 1300ms;
+}
+#div15 {
+    -webkit-animation-delay: 1400ms;
+    animation-delay: 1400ms;
+}
+#div16 {
+    -webkit-animation-delay: 1500ms;
+    animation-delay: 1500ms;
+}
+#div17 {
+    -webkit-animation-delay: 1600ms;
+    animation-delay: 1600ms;
+}
+#div18 {
+    -webkit-animation-delay: 1700ms;
+    animation-delay:1700ms;
+}
+#div19 {
+    -webkit-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+}
+#div20 {
+    -webkit-animation-delay: 1900ms;
+    animation-delay: 1900ms;
+}
+
+
+@keyframes anim {
+    0% {
+        background: red;
+        top: 0;
+        height: 100%;
+    }
+    50%{
+        background: darkred;
+        top: 50%;
+        height: 10%;
+    }
+    100% {
+        background: red;
+        top: 0;
+        height: 100%;
+    }
+}
+@-webkit-keyframes anim {
+    0% {
+        background: red;
+        top: 0;
+        height: 100%;
+    }
+    50%{
+        background: darkred;
+        top: 50%;
+        height: 10%;
+    }
+    100% {
+        background: red;
+        top: 0;
+        height: 100%;
+    }
+}
