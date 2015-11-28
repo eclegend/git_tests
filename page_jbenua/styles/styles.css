@@ -1,0 +1,99 @@
+@import url("star.css");
+
+body {
+    background: url("../img/nastol.jpg") no-repeat;
+    background-size:  100% 90%;
+    overflow: hidden;
+}
+img{
+    width: 60px;
+    height: 30px;
+}
+div.content{
+    margin: 10% 15%;
+    margin-bottom: 10%;
+    height: 75%;
+    text-align: center;
+}
+h1{
+    color: #FFFFFF;
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 24%;
+    margin-left: 38%;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+img, h1:hover{
+    opacity:1;
+}
+h2{
+    top: 300px;
+    margin: 200px auto;
+}
+button{
+    background: #5D4B86;
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: medium;
+    color: #000000;
+    border: none;
+}
+a{
+    font-family: "Times New Roman", Times, serif;
+    text-decoration:none;
+}
+img.author{
+    width: 30px;
+}
+a.author_git{
+    position: absolute;
+    right: 30px;
+}
+a.author_bit{
+    position: absolute;
+    right: 0%;
+}
+
+button:hover{
+    background: #A95676;
+}
+p{
+    width: 60%;
+    color: #FFFFFF;
+    position: absolute;
+    /*top: 40%;*/
+    left: 20%;
+    opacity: 0;
+    transition: opacity 3s;
+}
+p.active
+{
+    opacity: 1;
+}
+
+#par{
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #D07699;
+    position: inherit;
+    top: 350px;
+}
+table{
+    align: center;
+    width: 100%;
+    position: inherit;
+}
+td{
+    width: 20%;
+}
+
+a button{
+    font-size: 110%;
+}
