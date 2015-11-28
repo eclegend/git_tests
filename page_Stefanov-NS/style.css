@@ -1,0 +1,116 @@
+   body
+   {
+    background: url(g1.jpg) no-repeat;background-size: 100%;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+   }
+   #butn
+   {
+   	font-size:40px;
+   	opacity:0.7;
+   	background:white;
+   }
+   
+   div#load
+   {
+   	color:white;
+   	background:black;
+   	opacity:0.7;
+  	position:fixed;
+   	z-index:10;
+   	top:0px;
+   	width:100%;
+   	height:1500px;
+   	animation-duration: 8s;
+   	animation-iteration-count: 3;
+    }
+ #l
+ {
+ position:absolute;
+ left:50%;
+ top:25%;
+ }
+ .aj 
+ {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin-left: -32px; 
+  margin-top: -32px; 
+}
+
+@keyframes example 
+{
+    0%   { left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+  
+   #alf
+   {
+	background-image:'ALF_Season_One_R1.jpg';
+	font-size : 50px;
+	text-align:center;
+   }
+   #des
+	{font-size:14px;}
+    #t
+      {
+		color:silver;
+		background-color:black;
+		opacity:0.9;
+		table-layout:auto;
+		width:100%;
+		height:100%;
+		
+	}
+   #m
+      {
+		background-color:white;
+		opacity:0.9;
+		table-layout:auto;
+		width:auto;
+	}
+	#cast{width:35%}
+	#eps{width:40%}
+	#pic{width:10%;}
+	#descr{width:75%;}
+	#descrr{font-size:16px;width:75%;}
+	#bar {list-style-type:none;margin: 0;padding: 0;}
+	#nav{display:inline;}
+	#navbar{font-size:23px;background-color:black;position:fixed;top:0;z-index:1000;}
+	a:link {color:white;background-color:transparent;text-decoration:none;}
+	a:visited {color:white;background-color:transparent;text-decoration:none;}
+	a:hover {color:gold;background-color:transparent;text-decoration:underline;}
+	a:active {color:red;background-color:transparent;text-decoration:underline;}
+	#ab
+	{
+		font-size:25px;
+		color:silver;
+		background-color:black;
+		opacity:0.8;
+		
+	}
+	
+	html
+	{
+		margin:0px;
+		padding:0px;
+	}
+
+	#maket {width:100%;margin:0 auto;}
+
+	#ltab
+	{
+		background-color:black;
+		font-size:32px;
+		width:200px;
+		height:300px;
+		float:left;
+		position:absolute;top:30%;
+		opacity:0.8;
+	}
