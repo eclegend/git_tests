@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<LINK rel="stylesheet" media="screen" type="text/css" title="Style" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Contacts
+	</title>
+</head>
+<script src="index.js"></script>
+</script>
+<body>
+<div id="block">
+	<div id="header"> 
+		<a href="index.html">
+		<div id="logo">
+		HOTEL MINISWISS KHAJIAR
+		</div>
+		</a>
+	</div>
+	<div id="menu">
+	<div id="nav">
+	<ul id="tabs">
+		<li id="previous">
+			<a href="gallery.html" title="Previous">&lt;</a>
+		</li>
+		<li id="home" class="current">
+			<a href="index.html" title="Home">Home</a>
+		</li>
+		<li id="pricelist">
+			<a href="pricelist.html" title="Pricelist">Pricelist</a>
+		</li>
+		<li id="gallery">
+			<a href="gallery.html" title="Gallery">Gallery</a>
+		</li>
+		<li id="contact">
+			<a class="selected" href="contacts.html" title="Contacts">Contacts</a>
+		</li>
+		<li id="next">
+			<a href="contacts.html" title="Next">&gt;</a>
+		</li>
+	</ul>
+	</div>
+	</div>
+	<div id="content">
+		<div class="block">
+			<h1>Contact us</h1>
+			<div id="contacts">
+				<pre class="block-pre">Hotel Mini Swiss, Khajjiar, Distt. Chamba (H.P.)
+(H.P) 176304
+Mb. : 09810229464
+E-mail: <span class="email">miniswisshotel@gmail.com</span>
+Website : www.hotelminiswiss.in
+
+For Reservation :
+Mob. : 09278381948
+Ph. : 011-45623232, 22478537
+E-mail: <span class="email">miniswisshotel@gmail.com</span>
+				</pre>
+			</div>
+			<h2>Feedback</h2>
+			<div id="call-back">
+			<table>
+				<tr>
+					<th><p class="text">Your Name : *</p></th>
+					<th><input id="name" type="text" size="25"></th>
+				</tr>
+				<tr>
+					<th><p class="text">E-Mail : *</p></th>
+					<th><input id="email" type="text" size="25"></th>
+				</tr>
+				<tr>
+					<th><p class="text">Phone No. :</p></th>
+					<th><input id="phone" id="name" type="text" size="25"></th>
+				</tr>
+				<tr>
+					<th><p class="text">No. of Persons : *</p></th>
+					<th>
+					Persons:
+					<select id="perSel">
+						<option>1</option>
+						<option>2</option>
+					</select>
+					Children:
+					<select id="childSel">
+					  <option>0</option>
+					  <option>1</option>
+					  <option>2</option>
+					</select></th>
+				</tr>
+				<tr>
+					<th><p class="text">Select Room: *</p></th>
+					<th>
+						<select id="roomSel" style="width:100%;">>
+							<option>Deluxe Room</option>
+							<option>Super Deluxe Room</option>
+							<option>Suites</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th><p class="text">Date of Arrival:</p></th>
+					<th><input id="date" type="date" style="width:98%;"></th>
+				</tr>
+				<tr>
+					<th><p class="text">Please mention any other Requirements:</p></th>
+					<th><textarea id="textArea" style="margin-top:3px;height:100%;width:98%;"> </textarea></th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<center>
+							<button type="button" class="blog-button" onclick="showTable()">Send</button>
+							<button type="button" class="blog-button" onclick="reset()">Reset</button>
+						</center>
+					</th>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p id="footer-text" align="center"> 
+		Copyright © 2015 Alexey Savenkov<br /> All Rights Reserved
+	</p>
+</div>
+<script>
+	function showTable(){
+		var name=document.getElementById("name").value;
+		var email=document.getElementById("email").value;
+		var phone=document.getElementById("phone").value;
+		var perSel=document.getElementById("perSel").value;
+		var childSel=document.getElementById("childSel").value;
+		var roomSel=document.getElementById("roomSel").value;
+		var date=document.getElementById("date").value;
+		var text=document.getElementById("textArea").value;
+		alert(name+"\n"+email+"\n"+phone+"\n"+perSel+"\n"+childSel+"\n"+roomSel+"\n"+date+"\n"+text+"\n");
+	}
+	function reset(){
+		document.getElementById("name").value="";
+		document.getElementById("email").value="";
+		document.getElementById("phone").value="";
+		document.getElementById("perSel").value="";
+		document.getElementById("childSel").value="";
+		document.getElementById("roomSel").value="";
+		document.getElementById("date").value="";
+		document.getElementById("textArea").value="";	
+	}
+</script>
+</body>
+</html>
