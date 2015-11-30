@@ -1,0 +1,55 @@
+body {
+	background: ivory;
+    
+
+}
+
+h1#heading {
+    border: 5px ridge white;
+    background: antiquewhite;
+}
+
+table#tab {
+    background: antiquewhite;
+    border: 2px ridge white;
+    height: auto;
+}
+
+td#rim {
+    background-image: url(patt3.jpg)
+}
+
+div#header {
+    height: 20px;
+    background-image: url(patt3.jpg)
+}
+
+p#maintext {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+a#links {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+a {
+    color: gray;
+}
+
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+}
+.rightimg  {
+    float: right;
+    margin: 7px 0 7px 7px;
+}
+td#books {
+    border: 2px ridge white;
+    width: 250px;
+}
+

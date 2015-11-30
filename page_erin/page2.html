@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Jack Kerouac</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <center>
+            
+            <h1 id="heading"><div id="header"></div>
+               <a href="main.html" style="color: black; text-decoration: none">Beat! Beat! Beat!</a>
+            <div id="header"></div></h1>
+            <table id="tab" width=100%>
+                <td id="rim" width="20%">
+                    
+                </td>
+                <td width="60%">
+                    <p id="maintext">
+                        <img class="rightimg" src="kerouac2.png" width="300px">
+                            <br><b>Jack Kerouac</b> (born Jean-Louis Lebris de Kerouac March 12, 1922 - October 21, 1969) was an American novelist and poet.<br><br>He is considered a literary iconoclast and, alongside William S. Burroughs and Allen Ginsberg, a pioneer of the Beat Generation. Kerouac is recognized for his method of spontaneous prose. Thematically, his work covers topics such as Catholic spirituality, jazz, promiscuity, Buddhism, drugs, poverty, and travel. He became an underground celebrity and, with other beats, a progenitor of the hippie movement, although he remained antagonistic toward some of its politically radical elements.<br><br>In 1969, at age 47, Kerouac died from internal bleeding due to long-term alcohol abuse. Since his death Kerouac's literary prestige has grown and several previously unseen works have been published. All of his books are in print today, including The Town and the City, On the Road, Doctor Sax, The Dharma Bums, Mexico City Blues, The Subterraneans, Desolation Angels, Visions of Cody, The Sea Is My Brother, and Big Sur.<br><br>Kerouac is generally considered to be the father of the Beat movement, although he actively disliked such labels. Kerouac's method was heavily influenced by the prolific explosion of Jazz, especially the Bebop genre established by Charlie Parker, Dizzy Gillespie, Thelonious Monk, and others. Later, Kerouac included ideas he developed from his Buddhist studies that began with Gary Snyder. He often referred to his style as spontaneous prose. Although Kerouac's prose was spontaneous and purportedly without edits, he primarily wrote autobiographical novels based upon actual events from his life and the people with whom he interacted.<br><br>Many of his books exemplified this spontaneous approach, including On the Road, Visions of Cody, Visions of Gerard, Big Sur, and The Subterraneans. The central features of this writing method were the ideas of breath (borrowed from Jazz and from Buddhist meditation breathing), improvising words over the inherent structures of mind and language, and not editing a single word (much of his work was edited by Donald Merriam Allen, a major figure in Beat Generation poetry who edited some of Ginsberg's work as well). Connected with his idea of breath was the elimination of the period, preferring to use a long, connecting dash instead. As such, the phrases occurring between dashes might resemble improvisational jazz licks. When spoken, the words might take on a certain kind of rhythm, though none of it pre-meditated.
+                            <hr><center><img src="kerouac3.jpg" width="800px"></center><hr>
+                            <div onClick="expandcollapse()"><b><u>Literature:</u></b></div>
+                            <div id="l">
+                            <ul id="list">
+                                <li>'Big Sur' - 1962</li>
+                            </ul>
+                            <hr>
+                            Add more:<br>Name:<input type="text" id="name"><br>Year:<input type="text" id="year"><br><input type="button" value="Add" onClick="add()"></div>
+                    </p>
+                    <form action="https://en.wikipedia.org/wiki/Jack_Kerouac">
+                        <input type="submit" value="Read more on Wiki">
+                    </form><form action="main.html">
+                        <input type="submit" value="Back to main page">
+                    </form>
+                    
+                    
+                </td>
+                <td id="rim" width="20%">
+                </td>
+            </table>
+            <h1 id="heading"><div id="header"></div></h1>
+        </center>
+    </body>
+    <script>
+        function expandcollapse()
+        {
+            if (document.getElementById("l").style.display=="inline")
+            {
+                document.getElementById("l").style.display="none";
+            }
+            else
+            document.getElementById("l").style.display="inline";
+        }
+        function add()
+        {
+            var n = document.getElementById("name").value;
+            var y = document.getElementById("year").value;
+            if ((n!="")&&(y!=""))
+            {
+                var list = document.getElementById("list");
+                var txt = "'" + n + "' - " + y;
+                var i = document.createElement("li");
+                var el = document.createTextNode(txt);
+                i.appendChild(el);
+                list.appendChild(i)
+            }
+            else
+            alert("Fill in all the fields, please");
+        }
+    </script>	
+</html>
