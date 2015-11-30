@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Сверхновая</title>
+<style>
+	body{
+		background-image: url(6.jpg);
+	}
+	
+
+</style>
+</head>
+<body onLoad="loadPicture('1bab70c1c8dcbabe9ba4df07d6f793d4.png',400,150, 450, 150)">
+<canvas id="canvas" width="1300" height="650"></canvas>
+<script>
+//------------------------------------------------------GETTING CANVAS CONTEXT
+	var canvas = document.getElementById('canvas');
+	if(canvas.getContext)
+	{
+		var context = canvas.getContext('2d');
+	}
+	else alert("Loading canvas context error!");
+//------------------------------------------------------GETTING CANVAS CONTEXT
+
+
+var linkX=400;
+var linkY=300;
+var linkHeight=150;
+var linkWidth=450;
+var inLink = false;
+
+var linkX1=130;
+var linkY1=200;
+var linkHeight1=150;
+var linkWidth1=100;
+var inLink1 = false;
+
+var linkX2=130;
+var linkY2=350;
+var linkHeight2=150;
+var linkWidth2=100;
+var inLink2 = false;
+
+//var linkX3=130;
+//var linkY3=500;
+//var linkHeight3=150;
+//var linkWidth3=100;
+//var inLink3 = false;
+
+canvas.addEventListener("mousemove", on_mousemove, false);
+canvas.addEventListener("click", on_click, false);
+
+
+	function on_mousemove (ev) {
+  var x, y;
+ 
+  // Get the mouse position relative to the canvas element.
+  if (ev.layerX || ev.layerX) { //for firefox
+    x = ev.layerX;
+    y = ev.layerY;
+  }
+  x-=canvas.offsetLeft;
+  y-=canvas.offsetTop;
+ 
+  //is the mouse over the link?
+  if(x>=linkX && x <= (linkX + linkWidth) &&
+     y<=linkY && y>= (linkY-linkHeight)){
+      document.body.style.cursor = "pointer";
+      inLink=true;
+  }
+  else{
+      document.body.style.cursor = "";
+      inLink=false;
+  }
+  
+  if(x>=linkX1 && x <= (linkX1 + linkWidth1) &&
+     y<=linkY1 && y>= (linkY1-linkHeight1)){
+      document.body.style.cursor = "pointer";
+      inLink1=true;
+  }
+  else{
+      document.body.style.cursor = "";
+      inLink1=false;
+}
+	  
+	  if(x>=linkX2 && x <= (linkX2 + linkWidth2) &&
+     y<=linkY2 && y>= (linkY2-linkHeight2)){
+      document.body.style.cursor = "pointer";
+      inLink2=true;
+  }
+  else{
+      document.body.style.cursor = "";
+      inLink2=false;
+  }
+  
+//   if(x>=linkX3 && x <= (linkX3 + linkWidth3) &&
+//     y<=linkY3 && y>= (linkY3-linkHeight3)){
+//      document.body.style.cursor = "pointer";
+//      inLink3=true;
+//  }
+//  else{
+//      document.body.style.cursor = "";
+//      inLink3=false;
+//  }
+
+	}
+ 
+ 
+//if the link has been clicked, go to link
+function on_click(e) {
+	
+  if (inLink)  {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+	loadPicture('d031bf56d367c798af00591d1c878842.png', 50,100, 250, 100);
+	loadPicture('db8bcc2eafa7c9c5dda7e4622992ef78.png', 50,250, 250, 100);
+	//loadPicture('f5713be6b7b9ecf255bc856c06f5ae96.png', 50,400, 250, 100);
+	linkX=0;
+	linkY=0;
+	linkHeight=0;
+	linkWidth=0;
+  }
+  
+	if(inLink1){
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		loadPicture('d031bf56d367c798af00591d1c878842.png', 50,100, 250, 100);
+		loadPicture('db8bcc2eafa7c9c5dda7e4622992ef78.png', 50,250, 250, 100);
+		//loadPicture('f5713be6b7b9ecf255bc856c06f5ae96.png', 50,400, 250, 100);
+		loadInfo(context, text, marginLeft, marginTop, maxWidth, lineHeight);
+		inLink1=false;
+	}
+	
+	if(inLink2){
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		loadPicture('d031bf56d367c798af00591d1c878842.png', 50,100, 250, 100);
+		loadPicture('db8bcc2eafa7c9c5dda7e4622992ef78.png', 50,250, 250, 100);
+		loadPicture('1g.jpg', 400,110, 300, 200);
+		loadPicture('2g.jpg', 800,110, 300, 200);
+		loadPicture('3g.jpg', 400,390, 300, 200);
+		loadPicture('4g.jpg', 800,390, 300, 200);
+		//loadPicture('f5713be6b7b9ecf255bc856c06f5ae96.png',200,150, 250, 100);
+		inLink2=false;
+	}
+	
+//	if(inLink3){
+//		context.clearRect(0, 0, canvas.width, canvas.height);
+//		loadPicture('d031bf56d367c798af00591d1c878842.png', 50,100, 250, 100);
+//	loadPicture('db8bcc2eafa7c9c5dda7e4622992ef78.png', 50,250, 250, 100);
+//	loadPicture('f5713be6b7b9ecf255bc856c06f5ae96.png', 50,400, 250, 100);
+//		loadVideo();
+//	}
+	
+}
+
+function loadPicture(str, a, b, c, d)                                                     //loads picture on the page
+	{
+		var img = new Image();
+		img.src = str;
+		//context.clearRect(0, 0, canvas.width, canvas.height);
+		context.beginPath();
+		img.onload=function()
+		{
+			try
+			{
+				context.drawImage(img, a,b,c,d);
+			}
+			catch(err)
+			{
+				alert(err);
+			}
+		}
+	}
+	
+//	function loadVideo(a, b, c, d)                                                     //loads picture on the page
+//	{
+//		//var img = new Video();
+//		img.src = str;
+//		//context.clearRect(0, 0, canvas.width, canvas.height);
+//		context.beginPath();
+//		img.onload=function()
+//		{
+//			try
+//			{
+//				context.drawImage(img, a,b,c,d);
+//			}
+//			catch(err)
+//			{
+//				alert(err);
+//			}
+//		}
+//	}
+	
+	function loadInfo(context, text, marginLeft, marginTop, maxWidth, lineHeight)                                                     //loads picture on the page
+	{
+		var words = text.split(" ");
+        var countWords = words.length;
+        var line = "";
+        for (var n = 0; n < countWords; n++) {
+            var testLine = line + words[n] + " ";
+            var testWidth = context.measureText(testLine).width;
+            if (testWidth > maxWidth) {
+                context.fillText(line, marginLeft, marginTop);
+                line = words[n] + " ";
+                marginTop += lineHeight;
+            }
+            else {
+                line = testLine;
+            }
+        }
+        context.fillText(line, marginLeft, marginTop);
+	}
+	
+	var maxWidth = 900; //размер поле, где выводится текст
+    var lineHeight = 25;
+    /*если мы знаем высоту текста, то мы можем
+     предположить, что высота строки должна быть именно такой*/
+    var marginLeft = 350;
+    var marginTop = 90;
+	var text = "A supernova is a stellar explosion that briefly outshines an entire galaxy, radiating" + 
+					" as much energy as the Sun or any ordinary star is expected to emit over its entire life" + 
+					" span, before fading from view over several weeks or months. The extremely luminous burst of " +
+            		" radiation expels much or all of a star's material at a velocity of up to 30,000 km/s" + 
+					"  (10% of the speed of light), driving a shock wave into the surrounding interstellar medium." +
+					" This shock wave sweeps up an expanding shell of gas and dust called a supernova remnant. " +
+					" Supernovae are potentially strong galactic sources of gravitational waves. A great proportion" + 
+					" of primary cosmic rays comes from supernovae. Supernovae are more energetic than novae." + 
+					" Nova means 'new' in Latin, referring to what appears to be a very bright new star shining in" +
+					" the celestial sphere; the prefix 'super-' distinguishes supernovae from ordinary novae," + 
+					" which are far less luminous. The word supernova was coined by Walter Baade and" + 
+					" Fritz Zwicky in 1931. It is pronounced /ˌsuːpərnoʊvə/ with the plural supernovae /ˌsuːpərnoʊviː/" +
+					" or supernovas (abbreviated SN, plural SNe after 'supernovae'). Supernovae can be triggered" +
+					" in one of two ways: by the sudden re-ignition of nuclear fusion in a degenerate star;"+ 
+					" or by the gravitational collapse of the core of a massive star. In the first case, a degenerate" + 
+					" white dwarf may accumulate sufficient material from a companion, either through accretion" +
+					" or via a merger, to raise its core temperature, ignite carbon fusion, and trigger runaway" + 
+					" nuclear fusion, completely disrupting the star. In the second case, the core of a massive star" +
+					" may undergo sudden gravitational collapse, releasing gravitational potential energy that" +
+					" create a supernova explosion. The last directly observed supernova in the Milky Way was" +
+					" Kepler's Star of 1604 (SN 1604); remnants of two more recent supernovae have been found"+
+					" retrospectively. Observations in other galaxies indicate that supernovae should occur on average"+
+					" about three times every century in the Milky Way, and that any galactic supernova would almost"+
+					" certainly be observable in modern astronomical equipment. They play a significant role in enriching" +
+					" the interstellar medium with higher mass elements. Furthermore, the expanding shock " +
+					" waves from supernova explosions can trigger the formation of new stars.";
+    context.font = "16pt Calibri";
+    context.fillStyle = "#ffffff";
+</script>
+</body>
+</html>
