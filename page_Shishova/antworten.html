@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> нига отзывов</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+window.onload=function(){
+	try{
+		var path = window.location.pathname;
+		path = path.substring(1,path.length-14);
+		document.body.innerHTML=document.body.innerHTML+readAll(path);
+	}catch(e){
+		alert("ќставить отклик можно только в Internet Explorer");
+		parent.frames[1].window.location.href="about.html";
+		return;
+	}
+}
+function readAll(path){
+	var fso, fr, all;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	fr = fso.OpenTextFile(path+"antwort.txt",1, true); 
+	if (fr.AtEndOfStream)
+		all = "";
+	else all = fr.ReadAll();
+	fr.Close();
+	return all;
+}
+</script>
+</head>
+<body >
+<div align="center" id="speach"><div id="headline"><p> нига отзывов</p></div></div>
+<br><br>
+</div>
+
+</body>
+</html>

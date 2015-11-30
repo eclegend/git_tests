@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<LINK rel="stylesheet" media="screen" type="text/css" title="Style" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Home
+	</title>
+	<script>
+		var mod=0;
+		function addNewBlogEntry(){
+			var name=document.getElementById("name").value;
+			var date=document.getElementById("date").value;
+			var topic=document.getElementById("topic").value;
+			var text=document.getElementById("textAr").value;
+			if(mod%2==0){
+				document.getElementById("pn1").innerHTML=topic;
+				document.getElementById("pt1").innerHTML=text;
+				document.getElementById("cr1").innerHTML=name+ " " + date;
+			}
+			else{
+				document.getElementById("pn2").innerHTML=topic;
+				document.getElementById("pt2").innerHTML=text;
+				document.getElementById("cr2").innerHTML=name+ " " + date;
+			}
+			mod+=1;
+			overlay();
+		}
+		function clear(){
+			document.getElementById("name").value="";
+			document.getElementById("date").value="";
+			document.getElementById("topic").value="";
+			document.getElementById("textAr").value="";
+		}
+		function overlay() {
+			el = document.getElementById("overlay");
+			el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+			clear();
+		}
+		var id=1;
+		function loadSlideShow(){
+			el = document.getElementById("slider-prev");
+			el.style.visibility="hidden";
+		}
+		function next(){
+			id+=1;
+			if (id<3) {
+				document.getElementById("img").src=id+".jpg";
+				var el = document.getElementById("slider-prev");
+				el.style.visibility="visible";
+			}else{
+				document.getElementById("img").src=id+".jpg";
+				var el = document.getElementById("slider-next");
+				el.style.visibility="hidden";
+			}
+		}
+		function prev(){
+			id-=1;			
+			if (id>1) {
+				document.getElementById("img").src=id+".jpg";
+				var el = document.getElementById("slider-next");
+				el.style.visibility="visible";
+			}else{
+				document.getElementById("img").src=id+".jpg";
+				var el = document.getElementById("slider-prev");
+				el.style.visibility="hidden";
+			}
+		}
+	</script>
+</head>
+<body onload="loadSlideShow()">
+<div id="overlay">
+	<div>
+		<table>
+			<tr>
+				<th><p class="inp">Your Name : *</p></th>
+				<th><input id="name" type="text" size="25"></th>
+			</tr>
+			<tr>
+				<th><p class="inp">Date : *</p></th>
+				<th><input id="date" type="date" style="width:98%;"></th>
+			</tr>
+			<tr>
+				<th><p class="inp">Topic :</p></th>
+				<th><input id="topic" type="text" size="25"></th>
+			</tr>
+			<tr>
+				<th><p class="inp">Text :</p></th>
+				<th><textarea id="textAr" style="margin-top:3px;height:100%;width:98%;"> </textarea></th>
+			</tr>
+		</table>
+		<input type="button" class="blog-button" onclick="addNewBlogEntry()" value="OK"/>
+		<input type="button" class="blog-button" onclick="overlay()" value="Cancel"/>
+		</div>
+	</div>
+</div>
+<div id="block">
+	<div id="header"> 
+		<a href="index.html">
+		<div id="logo">
+		HOTEL MINISWISS KHAJIAR
+		</div>
+		</a>
+	</div>
+	<div id="menu">
+	<div id="nav">
+	<ul id="tabs">
+		<li id="previous">
+			<a href="index.html" title="Previous">&lt;</a>
+		</li>
+		<li id="home" class="current">
+			<a class="selected" href="index.html" title="Home">Home</a>
+		</li>
+		<li id="pricelist">
+			<a href="pricelist.html" title="Pricelist">Pricelist</a>
+		</li>
+		<li id="gallery">
+			<a href="gallery.html" title="Gallery">Gallery</a>
+		</li>
+		<li id="contact">
+			<a href="contacts.html" title="Contacts">Contacts</a>
+		</li>
+		<li id="next">
+			<a href="pricelist.html" title="Next">&gt;</a>
+		</li>
+	</ul>
+	</div>
+	</div>
+	<div id="content">
+		<div id="mainblock">
+			<div class="slider" id="main-slider"><!-- outermost container element -->
+				<div class="slider-wrapper"><!-- innermost wrapper element -->
+					<img id="img" src="1.jpg" alt="1" class="slide"/>
+				</div>
+				<div class="slider-nav"><!-- "Previous" and "Next" actions -->
+					<button id="slider-prev" class="slider-previous" onclick="prev()">Previous</button>
+					<button id="slider-next" class="slider-next" onclick="next()">Next</button>
+				</div>
+			</div>
+			<div id="info">
+				<p style="color:#7c795d;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 13pt">Mini Switzerland of India at a height of 6400 ft. Hutchison writes, "Khajjiar is a forest glade of great beauty, 6400 feet above sea level".</p>
+                <p>Khajjiar is often reffered to as "Gulmarg of Himachal Pradesh". The lush green meadows are surrounded by thick pine and cedar forests. Grazing herds of sheep, goats and other milch cattle present a prefect pastoral scenery. There is a small lake in the center of the saucer shaped meadow which has in it a floating island.</p>
+			</div>
+		</div>
+		<div id="blog">
+			<h4 class="module-header-bar">Latest entries from the blog</h4>
+			<div class="blog-entry">
+				<h2 id="pn1" class="pname">Post</h2>
+				<p id="pt1" class="ptext">This is sample text  This is sample text This is sample text</p>
+				<p id="cr1" class="created">Me 14/06/2015</p>
+			</div>
+			<div class="blog-entry">
+				<h3 id="pn2" class="pname">Post</h3>
+				<p id="pt2" class="ptext"> This is sample text  This is sample text This is sample text</p>
+				<p id="cr2" class="created">Me 14/06/2015</p>
+			</div>
+			<div id="blog-nav">
+				<input type="button" class="blog-button" onclick="overlay()" value="Add new"/>
+				<input type="button" class="blog-button" onclick="alert('not supported now!')" value="Read more"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+<p id="footer-text" align="center"> 
+Copyright © 2015 Alexey Savenkov<br /> All Rights Reserved
+</p>
+</div>
+</body>
+</html>
