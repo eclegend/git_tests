@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Play With Tables</title>
+	</head>
+	<body bgcolor=#d9b3ff>
+<script language="JavaScript">
+	<!--Spans-->
+function function01() {
+    document.getElementById("th1").rowSpan = 2;
+}
+function function03() {
+    document.getElementById("th5").rowSpan = 3;
+}
+function function02() {
+    location.reload();
+}
+function function04() {
+    document.getElementById("th2").colSpan = 2;
+}
+<!--Spans-->
+<!--Frames-->
+function function1() {
+        document.getElementById("myTable").frame = "void";
+    }
+    function function2() {
+        document.getElementById("myTable").frame = "above";
+    }
+    function function3() {
+        document.getElementById("myTable").frame = "below";
+    }
+    function function4() {
+        document.getElementById("myTable").frame = "border";
+    }
+    function function5() {
+        document.getElementById("myTable").frame = "box";
+    }
+    function function6() {
+        document.getElementById("myTable").frame = "hsides";
+    }
+    function function7() {
+        document.getElementById("myTable").frame = "lhs";
+    }
+    function function8() {
+        document.getElementById("myTable").frame = "rhs";
+    }
+    function function9() {
+        document.getElementById("myTable").frame = "vsides";
+    }
+	 function function10() {
+       location.reload;
+    }
+<!--Frames-->
+function foo1(){
+document.getElementById("myTable").align="left";}
+function foo2(){
+document.getElementById("myTable").align="right";}
+function foo3(){
+document.getElementById("myTable").align="centre";}
+
+
+function rowRules(){
+    document.getElementById('myTable').rules="rows"
+}
+function colRules(){
+    document.getElementById('myTable').rules="cols"
+}
+</script>
+<table  id="myTable" width=80%  cellpadding="40" >
+    <tr>
+        <th id="th1">Cell 1</th>
+        <th id="th2">Cell 2</th>
+        <th id="th3">Cell 3</th>
+    </tr>
+    <tr>
+        <th id="th4">Cell 4</th>
+        <th id="th5">Cell 5</th>
+        <th id="th6">Cell 6</th>
+    </tr>
+    <tr>
+        <th id="th7">Cell 7</th>
+        <th id="th8">Cell 8</th>
+        <th id="th9">Cell 9</th>
+    </tr>
+    <tr>
+        <th id="th10" >Cell 10</th>
+        <th id="th11">Cell 11</th>
+        <th id="th12">Cell 12</th>
+    </tr>
+</table>
+<br><br><br>
+
+<h3>Spans</h3>
+<input type="button" value="RowSpan(2) Cell 1" onClick="function01();">
+<input type="button" value="RowSpan(3) Cell 5" onClick="function03();">
+<input type="button" value="ColSpan(3) Cell 3" onClick="function04();">
+<input type="button" value="Restore" onClick="function02();">
+<br><br>
+<h3>Frames</h3>
+<input type="button" value="VOID" onClick="function1();">
+<input type="button" value="ABOVE" onClick="function2();">
+<input type="button" value="BELOWE" onClick="function3();">
+<input type="button" value="FULL BORDER" onClick="function4();">
+<input type="button" value="BOX" onClick="function5();">
+<input type="button" value="HSIDES" onClick="function6();">
+<input type="button" value="RHS" onClick="function7();">
+<input type="button" value="VSIDE" onClick="function8();"><br>
+<h3>Align</h3><br>
+<input type="button" value="left" onClick="foo1();">
+<input type="button" value="right" onClick="foo2();">
+<input type="button" value="centre" onClick="foo3();">
+
+<br>
+<h3>Show Cols or Rows</h3>
+<input type="button" onclick="rowRules()" value="Show row borders">
+<input type="button" onclick="colRules()" value="Show col borders">
+<br><br>
+
+<button onclick="location.href='Anastasyzko_hello.html'">
+	<p>Click Here to go back to Main Menu</p>
+</body>
+</html>
