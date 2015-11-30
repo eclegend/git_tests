@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Оставьте отзыв</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+window.onload=function(){
+	//if (navigator.userAgent.indexOf("MSIE") == -1){
+		//alert("Оставить отклик можно только в Internet Explorer");
+		//parent.frames[1].window.location.href="about.html";
+	//}
+}
+
+Date.prototype.today = function () { 
+    return ((this.getDate() < 10)?"0":"") + this.getDate() +"."+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"."+ this.getFullYear();
+}
+Date.prototype.timeNow = function () {
+     return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
+}
+function sendA(){
+	try{
+	
+	var ta = document.getElementById("comment");
+	var us = document.getElementById("name");
+	if (ta.value=="" || ta.value == undefined || ta.value == null){
+		alert("Нельзя отправить пустой отзыв");
+		return;
+	}
+	var str="<p id='resh'>";
+	str+=(us.value=="" || us.value==null || us.value==undefined ? "Анонимный пользователь" : us.value);
+	str +=" <span color='red'>" + new Date().today() + "</span> в <span color='red'>" + new Date().timeNow() + "</span> ";
+	if (document.getElementById("r1").checked)
+		str+="отозвался(ась) :</p><br>";
+	if (document.getElementById("r2").checked)
+		str+="пожаловался(ась) :</p><br>";
+	if (document.getElementById("r3").checked)
+		str+="заказал(а) :</p><br>";
+	str +="<p id='resb'><i>" + ta.value +"</i></p><br>";
+	
+	var path = window.location.pathname;
+	path = path.substring(1,path.length-13);
+
+	path = path.split("/").join("//");
+	writeAll(path, str);
+	parent.frames[1].window.location.href="thankyou.html";
+	}catch(e){
+		alert("Оставить отклик можно только в Internet Explorer");
+		parent.frames[1].window.location.href="about.html";
+		return;
+	}
+}
+function readAll(path, str){
+	var fso, fr, all;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	fr = fso.OpenTextFile(path+"antworten.txt",1, true); 
+	if (fr.AtEndOfStream)
+		all = "";
+	else all = fr.ReadAll();
+	fr.Close();
+	str = all+str;
+	return str;
+	
+}
+function writeAll(path,str){
+	var fso, fw, all;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	fw = fso.OpenTextFile(path+"antwort.txt", 8, true); 
+  	fw.Write(str);
+  	fw.Close();
+
+}
+</script>
+</head>
+<body>
+<div align="center">
+<div id="res" align="left">
+Ваше имя: <input type="text" id="name" style="width:400px"><br><br>
+Выберите:<br>
+<p>
+   <input type="radio" id="r1" name="browser" value="res" checked> Оставить отзыв   
+   <input type="radio" id="r2" name="browser" value="com"> Пожаловаться   
+   <input type="radio" id="r3" name="browser" value="tale"> Заказать сказку   
+  </p>
+   <textarea id="comment" name="comment" style="width:500px;height:300px;" placeholder="Оставьте здесь отзыв, жалобу, или название сказки, которую хотите увидеть на сайте"></textarea><br><br>
+<div align="right"><button id="send" onclick="sendA()">Отправить</button></div>
+</div>
+</div>
+<br>
+
+
+
+</body>
+</html>

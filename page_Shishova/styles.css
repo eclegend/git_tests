@@ -1,0 +1,201 @@
+body{
+	background-color: #000000;
+	color: white;
+	text-indent: 1.5em;
+	font-family: garamond, book antiqua;
+  	scrollbar-face-color: #bbbbbb;
+	scrollbar-3dlight-color: #202020;
+	scrollbar-highlight-color: #bbbbbb;
+	scrollbar-track-color: #202020;
+	scrollbar-arrow-color: #202020;
+	scrollbar-shadow-color: #202020;
+	scrollbar-dark-shadow-color: #202020;
+}
+::-webkit-scrollbar { width: 15px;}
+::-webkit-scrollbar-button {  background-color: #202020; }
+::-webkit-scrollbar-track {  background-color: #202020;}
+::-webkit-scrollbar-track-piece { background-color: #202020;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #bbbbbb; }
+::-webkit-scrollbar-corner { background-color: #202020;}}
+::-webkit-resizer { background-color: #202020;}
+
+@font-face {
+	font-family: Schwabacher;
+	src: url(fonts/Schwabacher.eof);
+	src: local(Schwabacher), url(fonts/Schwabacher.ttf);
+}
+@font-face {
+	font-family: Alot_Gutenberg_B_Normal;
+	src: url(fonts/Alot_Gutenberg_B_Normal.eof);
+	src: local(Alot_Gutenberg_B_Normal), url(fonts/Alot_Gutenberg_B_Normal.ttf);
+}
+@font-face {
+	font-family: m_Brody;
+	src: url(fonts/m_Brody.eof);
+	src: local(m_Brody), url(fonts/m_Brody.ttf);
+}
+@font-face {
+	font-family: Good_Vibes_Pro;
+	src: url(fonts/Good_Vibes_Pro.eof);
+	src: local(Good_Vibes_Pro), url(fonts/Good_Vibes_Pro.ttf);
+}
+@font-face {
+	font-family: Azeroth_Cyrillic;
+	src: url(fonts/Azeroth_Cyrillic.eof);
+	src: local(Azeroth_Cyrillic), url(fonts/Azeroth_Cyrillic.ttf);
+}
+@font-face {
+	font-family: Rupster_Script_Free;
+	src: url(fonts/Rupster_Script_Free.eof);
+	src: local(Rupster_Script_Free), url(fonts/Rupster_Script_Free.ttf);
+}
+#headline {
+	margin-top: 70px;
+	font-family: Schwabacher, fantasy;
+	font-size: 30pt;
+}
+#link {
+	text-decoration:none; 
+	color:white;
+	font-weight:bold;
+ 	font-style: normal;
+}
+#link::visited {
+	color:#730505;
+	text-decoration:none;
+	font-weight:bold;
+ 	font-style: normal;
+}
+#smallerheadline {
+	margin-top: 70px;
+	font-family: Schwabacher, fantasy;
+	font-size: 20pt;
+}
+#firstletter {
+	font-family: Schwabacher, fantasy;
+	font-size: 30pt;
+	color: red;
+}
+#tilda {
+	font-size: 40pt;
+	color: red;
+}
+#speach{
+	width: 100%;
+}
+#speachin{
+	text-indent: 0em;
+	width: 500px;	
+	font-size:14pt;
+}
+#text{
+    	margin-bottom: 100px;
+    	margin-right: 100px;
+    	margin-left: 100px; 
+	margin-top: 20px;
+	font-family: garamond, book antiqua;
+}
+#tales{
+	background-color: white;
+	width: 100%;.
+	height: 50%;
+	white-space: normal;
+	overflow: auto;
+} 
+li {
+	list-style-type: none;
+	font-family: Rupster_Script_Free, m_Brody, fantasy;
+	font-size: 15pt;
+	padding:0;
+	margin:0;
+}
+ul {
+	padding:0;
+	margin:0;
+}
+#menubar{
+	text-indent: 0em;
+}
+#hstr{
+      	display: block;
+      	padding: 5px 5px 5px 0.5em;
+	background-color: linear-gradient(to right, #730505, #000000);
+      	background-color: #730505;
+      	color: #fff;
+      	width: 70%;
+	font-family: Rupster_Script_Free,  m_Brody, fantasy;
+	font-size: 15pt;
+}
+#res {
+	margin-top:50px;
+      	padding: 5px 5px 5px 0.5em;
+	background-color: linear-gradient(to right, #730505, #000000);
+      	background-color: #730505;
+      	color: #fff;
+      	width: 500px;
+  	font-family: Rupster_Script_Free,  m_Brody, fantasy;
+	font-size: 15pt;
+	text-indent: 0em;
+}
+input, textarea, button {
+  	font-family: Rupster_Script_Free,  m_Brody, fantasy;
+	font-size: 15pt;
+}
+#readlisten {
+	font-family: Rupster_Script_Free,  m_Brody, fantasy;
+	font-size: 25pt;
+	padding:5px;
+	width:25%;
+	margin:50px;
+}
+#readlisten:hover {
+	width:25%;
+	background-color: #bbbbbb;
+      	color: #730505;
+}
+#button {
+	direction: rtl;
+      	width: 100%;
+      	border-right: 0px solid #000;
+      	padding: 0 0 1em 0;
+      	font-family: 'Trebuchet MS', 'Lucida Grande',
+      	Verdana, Lucida, Geneva, Helvetica,
+      	Arial, sans-serif;
+      	background-color: #000;
+	text-decoration: none;
+}
+#button li a {
+      	display: block;
+      	padding: 3px 3px 3px 0.5em;
+      	background-color: #414141;
+      	color: #fff;
+      	width: 100%;
+	text-decoration: none;
+}
+html>body #button li a {
+      	width: auto;
+}
+#button li a:hover {
+	text-decoration: none;
+      	background-color: #bbbbbb;
+      	color: #730505;
+	//text-shadow: 1px 1px #000000;
+}
+#resh {
+	margin-top:70px;
+      	padding: 5px 5px 5px 0.5em;
+      	color: #ff0000;
+  	font-family: garamond, book antiqua;
+	font-size: 15pt;
+	text-indent: 0em;
+	font-weight:bold;
+}
+#resb {
+	margin-top:5px;
+	margin-left:150px;
+      	padding: 5px 5px 5px 0.5em;
+      	color: #fff;
+  	font-family: Good_Vibes_Pro, garamond, book antiqua;
+	font-size: 12pt;
+	text-indent: 0em;
+}
