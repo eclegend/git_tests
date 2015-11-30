@@ -1,0 +1,101 @@
+
+body {
+	opacity:1 !important;
+	margin:0 auto;
+	background-image:url(pics/body.jpg);
+	background-size:cover;
+	background-position:center bottom;
+	background-repeat: no-repeat;
+	background-color:#000;
+	z-index:1 !important;
+}
+
+header {
+	display: block;
+	height: 140px;
+	background:rgba(0,0,0,0.3);
+	border-bottom: 1px solid #696969;
+	overflow: visible;
+	position:relative;
+	margin:0px 0px 0px 0px;
+}
+
+.header-midframe  {
+	margin:0 auto;
+	width: 1000px;
+	outline: 0px solid #000;
+	overflow: visible;
+	height: 140px;
+	position:relative;
+}
+
+.header-main {
+    display: block;
+    font-family: arial;
+    font-size: 27pt;
+    height: 80px;
+    line-height: 100px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding: 10px 0;
+    vertical-align: middle;
+	color: Bisque;
+}
+
+#menu {
+    display: block;
+    font-family: arial;
+    font-size: 11pt;
+    list-style: none outside none;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+}
+#menu > li{
+    float: left;
+    margin-right: 25px;
+}
+
+#menu > li > a{
+    color: Bisque;
+}
+
+a {  
+    color: DarkCyan;  
+    text-decoration:none; 
+} 
+
+a:hover { 
+	text-decoration:underline; 
+}
+
+.main-td {
+	background-image:url(pics/main.jpg);
+	background-size:cover;
+	background-position:center bottom;
+	background-repeat: no-repeat;
+	background-color:#000;
+}
+
+.main-subtd {
+}
+
+#maintext {
+	background-color: Beige;
+	border: 4px ridge White;
+}
+
+.left {
+    float: left;
+    margin: 7px 7px 7px 10px;
+}
+
+td#books {
+    border: 2px ridge white;
+}
+
+td#books-head {
+    border: 2px ridge white;
+	background-color: LemonChiffon;
+}
