@@ -1,0 +1,82 @@
+a {
+      text-decoration:none;
+ }
+body
+{
+	color:#000;
+	background:gray;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+#main
+{
+	background:white;
+	position:relative; 
+	margin:0 auto; 
+	height:970px;
+	width:960px;
+}
+#head
+{	
+	position:relative; 
+	margin:0 auto;
+	height:150px;
+	width:960px;
+}
+#head a span
+{	
+	font-family:impact;
+	font-size:20px;
+}
+#footer
+{
+	background: url('shadow.png') repeat-x;
+	height: 37px;
+	padding-top: 13px;
+ 	position:relative; 
+	margin:0 auto;
+	margin-top:5%;
+	width:960px;
+}
+#information
+{
+	position:relative; 
+	margin:0 auto;
+	height:700px;
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#persInfo
+{
+	padding-top: 75px;
+	position:relative; 
+	margin:0 auto;
+	height:300px;
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#text
+{
+	font-family:impact;
+	margin-top: 3%;
+	margin-left: 1%;
+	padding-left:50px;
+	float:left;
+	height:250px;
+	width:60%;
+}
+#contact
+{
+	font-family:impact;
+	position:relative; 
+	margin:0 auto;
+	height:400px;
+	width:940px;
+}
+#contact h2
+{
+	text-align: center;
+}
